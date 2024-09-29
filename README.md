@@ -32,5 +32,4 @@ Notes
 
 [Deployment instructions](https://vaadin.com/docs/latest/control-center/getting-started) should guide you step-by-step.
 
-Or see this "walkthrough"
-<iframe width="560" height="315" src="https://www.youtube.com/embed/H1QZaKXtvO0?si=ladUXTozcgan7jQe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Or see this ["walkthrough"](https://www.youtube.com/embed/H1QZaKXtvO0?si=ladUXTozcgan7jQe).
