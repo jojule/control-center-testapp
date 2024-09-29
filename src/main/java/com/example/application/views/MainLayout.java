@@ -1,6 +1,5 @@
 package com.example.application.views;
 
-import com.example.application.views.empty.EmptyView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
@@ -50,7 +49,8 @@ public class MainLayout extends AppLayout {
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
 
-        nav.addItem(new SideNavItem("Empty", EmptyView.class, LineAwesomeIcon.FILE.create()));
+        nav.addItem(new SideNavItem("Home", DefaultView.class, LineAwesomeIcon.FILE.create()));
+        nav.addItem(new SideNavItem("Private", PrivateView.class, LineAwesomeIcon.LOCK_SOLID.create()));
 
         return nav;
     }

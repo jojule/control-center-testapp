@@ -1,29 +1,26 @@
-package com.example.application.views.empty;
+package com.example.application.views;
 
-import com.example.application.views.MainLayout;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.auth.AnonymousAllowed;
 import com.vaadin.flow.theme.lumo.LumoUtility.Margin;
 
-@PageTitle("Empty")
+@PageTitle("Welcome to My App")
 @Route(value = "", layout = MainLayout.class)
-public class EmptyView extends VerticalLayout {
+@AnonymousAllowed
+public class DefaultView extends VerticalLayout {
 
-    public EmptyView() {
+    public DefaultView() {
         setSpacing(false);
 
-        Image img = new Image("images/empty-plant.png", "placeholder plant");
-        img.setWidth("200px");
-        add(img);
-
-        H2 header = new H2("This place intentionally left empty");
+        H2 header = new H2("Welcome to My App");
         header.addClassNames(Margin.Top.XLARGE, Margin.Bottom.MEDIUM);
         add(header);
-        add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
+        add(new Paragraph("This is a public default page for the app 🤗"));
 
         setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
